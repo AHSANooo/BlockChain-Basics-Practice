@@ -1,0 +1,10 @@
+{
+  "counter.sol": {
+    "__sources__": {
+      "counter.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\ncontract Counter{\n\n    uint256 public count ; \n    function increament() public {\n\n        count +=1;\n\n    }\n\n\n}",
+        "file": "counter.sol"
+      }
+    }
+  }
+}
