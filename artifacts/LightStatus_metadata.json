@@ -39,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"LightStatus.sol": "LightStatus"
+			"contracts/LightStatus.sol": "LightStatus"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -53,7 +53,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"LightStatus.sol": {
+		"contracts/LightStatus.sol": {
 			"keccak256": "0xc4e5eccbc2956cb3d0e87ce3cc8c753004cce405a544818f60f6f68160849311",
 			"license": "MIT",
 			"urls": [

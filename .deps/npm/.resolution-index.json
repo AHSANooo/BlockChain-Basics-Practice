@@ -1,4 +1,12 @@
 {
+  "LightStatus.sol": {
+    "__sources__": {
+      "LightStatus.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.20;\n\ncontract LightStatus{\n\n    string private lightStatus = \"empty\";\n\n    function turnOnLight() public {\n\n        lightStatus= \"Light is ON\";\n\n    }\n\n    function getLightStatus() public view returns (string memory) { \n        //there could be a better method for this as we haven't learned about the returns in the class for solidity. \n    return lightStatus;\n}\n\n}",
+        "file": "LightStatus.sol"
+      }
+    }
+  },
   "counter.sol": {
     "__sources__": {
       "counter.sol": {
@@ -7,11 +15,11 @@
       }
     }
   },
-  "LightStatus.sol": {
+  "contracts/LightStatus.sol": {
     "__sources__": {
-      "LightStatus.sol": {
+      "contracts/LightStatus.sol": {
         "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.20;\n\ncontract LightStatus{\n\n    string private lightStatus = \"empty\";\n\n    function turnOnLight() public {\n\n        lightStatus= \"Light is ON\";\n\n    }\n\n    function getLightStatus() public view returns (string memory) { \n        //there could be a better method for this as we haven't learned about the returns in the class for solidity. \n    return lightStatus;\n}\n\n}",
-        "file": "LightStatus.sol"
+        "file": "contracts/LightStatus.sol"
       }
     }
   }
