@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLightStatus",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "turnOnLight",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LightStatus.sol": "LightStatus"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LightStatus.sol": {
+			"keccak256": "0xc4e5eccbc2956cb3d0e87ce3cc8c753004cce405a544818f60f6f68160849311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://16f46b620a6c451a39d4ec149acfc5e89eb2a01709eefeed7ff4861f854afffd",
+				"dweb:/ipfs/QmTbXSyDDoRYyfVfCLc7eYYwKDfzyYbsMpFdvQGCqQ1K4u"
+			]
+		}
+	},
+	"version": 1
+}
