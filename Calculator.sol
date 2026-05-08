@@ -1,34 +1,49 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
-
+import "hardhat/console.sol";
 
 contract Calculator {
 
-    function add (int256 a, int256 b) public pure returns (int256){
+        int256 private lastResult;
 
-        return a+b;
+    function add (int256 a, int256 b) external returns (int256){
 
-    }
-
-     function subtract (int256 a, int256 b) public pure returns (int256){
-
-        return a-b;
+        lastResult = a+b;
+        return lastResult;
 
     }
 
-     function divide (int256 a, int256 b) public pure returns (int256){
+     function subtract (int256 a, int256 b) external returns (int256){
+
+        lastResult = a-b;
+        return lastResult;
+
+    }
+
+     function divide (int256 a, int256 b) external returns (int256){
 
         require(b != 0 , "Cannot divide by zero");
+        lastResult = a/b;
+        return lastResult;
 
-        return a/b;
+    }
+
+     function multiply (int256 a, int256 b) external returns (int256){
+        lastResult= a*b;
+        return lastResult;
+
+    
 
     }
 
-     function multiply (int256 a, int256 b) public pure returns (int256){
+    function readLastResult() external view returns (int256){
 
-        return a*b;
+        console.log("Hello");
+        return lastResult;
+
 
     }
+
 
 
 
