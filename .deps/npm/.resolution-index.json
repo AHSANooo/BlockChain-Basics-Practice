@@ -22,5 +22,13 @@
         "file": "contracts/LightStatus.sol"
       }
     }
+  },
+  "Calculator.sol": {
+    "__sources__": {
+      "Calculator.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\n\ncontract Calculator {\n\n    function add (int256 a, int256 b) public pure returns (int256){\n\n        return a+b;\n\n    }\n\n     function subtract (int256 a, int256 b) public pure returns (int256){\n\n        return a-b;\n\n    }\n\n     function divide (int256 a, int256 b) public pure returns (int256){\n\n        require(b != 0 , \"Cannot divide by zero\");\n\n        return a/b;\n\n    }\n\n     function multiply (int256 a, int256 b) public pure returns (int256){\n\n        return a*b;\n\n    }\n\n\n\n}\n\n",
+        "file": "Calculator.sol"
+      }
+    }
   }
 }
