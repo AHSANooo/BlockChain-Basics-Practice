@@ -39,7 +39,7 @@
   "ScoreBook.sol": {
     "__sources__": {
       "ScoreBook.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\n\ncontract ScoreBook{\n\n\n    uint256[] private scores;\n\n    function addScore(uint256 a) external  {\n        scores.push(a);\n    }\n\n    function getScore(uint256 i) external  view returns (uint256) {\n\n        require(i < scores.length && i >= 0, \"index invalid\");\n            return scores[i];\n    }\n\n    function getTotal() external view returns (uint256){\n\n        return scores.length;\n\n    }\n\n}",
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\n\ncontract ScoreBook{\n\n\n    uint256[] private scores;\n\n    function addScore(uint256 a) external  {\n        scores.push(a);\n    }\n\n    function getScore(uint256 i) external  view returns (uint256) {\n\n        require(i < scores.length && i >= 0, \"index invalid\");\n            return scores[i];\n    }\n\n    function getTotal() external view returns (uint256){\n\n        return scores.length;\n\n    }\n\n    function clearIndex(uint256 i) external {\n        require(i> scores.length || i< 0, \"invalid Input\");\n        delete scores[i];\n    }\n\n    function clearAll() external {\n        delete scores;\n    }\n    function deleteLast() external {\n        require(scores.length> 0, \"Empty\");\n        scores.pop();\n\n    }\n\n    function updateScore (uint256 i, uint256 value) external {\n\n        require(i< scores.length, \"Invalid Index\");\n        scores[i]= value;\n    }\n}",
         "file": "ScoreBook.sol"
       }
     }

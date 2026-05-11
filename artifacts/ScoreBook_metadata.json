@@ -19,6 +19,33 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "clearAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "clearIndex",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deleteLast",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -48,6 +75,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "updateScore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -79,11 +124,11 @@
 	},
 	"sources": {
 		"ScoreBook.sol": {
-			"keccak256": "0x2ebd728d3a574b4c3f72f2b5700aec79ec822696b69c3b76016594d10a13e2c7",
+			"keccak256": "0xbacdb46d63698dc8e3476480024b30b8d8d54f7e4d86ccafd334bd4763ffaab3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0cef3a557bc32a05e16bee99ab63935ec474e0c48f101f64dc86c612b03562c",
-				"dweb:/ipfs/QmUwpzGcLeueTA8U6N3CMP38NFNK8kwdotpbvNBfUut23E"
+				"bzz-raw://bdced58f6ea6f4db958414fa84a2a088cb53a24c71208211cd65dfe9fe2522df",
+				"dweb:/ipfs/QmaR3bn9i3CB63BF3ccyALzjRDPDMD24ZacUx76QrEM67m"
 			]
 		}
 	},

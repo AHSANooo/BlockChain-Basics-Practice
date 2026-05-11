@@ -23,4 +23,23 @@ contract ScoreBook{
 
     }
 
+    function clearIndex(uint256 i) external {
+        require(i> scores.length || i< 0, "invalid Input");
+        delete scores[i];
+    }
+
+    function clearAll() external {
+        delete scores;
+    }
+    function deleteLast() external {
+        require(scores.length> 0, "Empty");
+        scores.pop();
+
+    }
+
+    function updateScore (uint256 i, uint256 value) external {
+
+        require(i< scores.length, "Invalid Index");
+        scores[i]= value;
+    }
 }
