@@ -43,5 +43,13 @@
         "file": "ScoreBook.sol"
       }
     }
+  },
+  "Whitelist.sol": {
+    "__sources__": {
+      "Whitelist.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\n\ncontract Whitelist {\n\n    address public immutable owner;\n\n    address[] public  allowed; \n    constructor (){\n        owner = msg.sender;\n    }\n\n\n    function addAddress (address user) external {\n\n        require(owner == msg.sender, \"Not owner\");\n        require(user != address(0), \"Zero Address\");\n        allowed.push(user);\n\n    }\n\n    function getAddress (uint256 i) external view returns (address){\n\n        require(i< allowed.length, \"Invalid Index\");\n        return allowed[i];\n\n    }\n\n    function totalAddresses () external view returns (uint256){\n        return allowed.length;\n    }\n\n\n\n}",
+        "file": "Whitelist.sol"
+      }
+    }
   }
 }
