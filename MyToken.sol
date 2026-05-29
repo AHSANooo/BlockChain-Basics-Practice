@@ -24,6 +24,7 @@ interface IERC20Metadata is IERC20 {
 }
 
 
+
 contract MyToken {
     // ── Metadata ────────────────────────────────────────────
     string public name;
